@@ -1,0 +1,52 @@
+body {
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 5px;
+}
+.textLeft {
+  text-align: left;
+}
+.loadingDiv {
+  height: 70vh;
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: 350px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 5px;
+  height: 250px;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.title {
+  font-weight: bolder;
+  background-color: #bdbec0;
+  text-align: center;
+}
+
+.message {
+  font-size: 20px;
+  color: #26351a;
+  font-weight: 500;
+}
+
+.edit {
+  position: absolute;
+  bottom: 0;
+  font-size: 25px;
+  font-weight: 900;
+  color: #ec722c;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
