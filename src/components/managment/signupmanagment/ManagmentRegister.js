@@ -58,7 +58,7 @@ const useStyles = (theme) => ({
   },
 
   bg: {
-    height: "90vh",
+    height: "100vh",
     background: "none",
     backgroundImage:
       "url(" +
@@ -71,19 +71,16 @@ const useStyles = (theme) => ({
 });
 class ManagmentRegister extends Component {
   submit = (formProps) => {
-    if (formProps.confirmPassword === formProps.password) {
-      console.log(formProps);
+    if (formProps.password === formProps.confirmPassword) {
       this.props.signup(formProps, () => {
-        alert("registered")
-        this.props.history.push("/");
+        alert('Registration Sucessfull')
+        this.props.history.push('/');
       });
-    } else {
-      alert("please match the password");
     }
-
-    // alert("Registered Successfully");
-  };
-
+    else {
+      alert("please matched the password")
+    }
+  }
   // if( formProps.confirmPassword === formProps.password ){
   //   this.props.signup(formProps, () => {
   //     alert('Registration Sucessfull')
@@ -302,15 +299,16 @@ class ManagmentRegister extends Component {
                       type="password"
                       component={this.managementPassword}
                     />
+                    <div> </div>
                     <Field
                       autoComplete="off"
                       required
                       fullWidth
-                      name=" confirmPassword"
+                      name="confirmPassword"
                       type="password"
                       component={this.managementConfirmPassword}
                     />
-                    <div></div>
+                    <p> </p>
                     <Button
                       type="submit"
                       fullWidth

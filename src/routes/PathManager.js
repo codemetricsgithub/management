@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 //imported Componemts
 import Contactus from "../components/contacts/Contactus";
-import Landingpage from "../components/landingpage";
+import Landingpage from "../components/landingpage/Landingpage";
 import LoginPage from "../components/logins/LoginPage";
 import LogoutPage from "../components/logins/LogoutPage";
 import Managment from "../components/managment/Managment";

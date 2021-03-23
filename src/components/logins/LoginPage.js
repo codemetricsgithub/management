@@ -255,11 +255,6 @@ class LoginPage extends Component {
                     >
                       Managment Login
                     </Button>
-                    <Grid item className={classes.radio}>
-                      <Link to="#" variant="filled">
-                        {"Don't have an account? Sign Up"}
-                      </Link>
-                    </Grid>
                   </form>
                   {/* //Teachers input Fields */}
                   <form

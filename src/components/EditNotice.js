@@ -80,7 +80,7 @@ const EditNotice = () => {
 
   useEffect(() => {
     loadNotice();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const onSubmit = async (e) => {
@@ -90,7 +90,7 @@ const EditNotice = () => {
       `https://ak-sms-api.herokuapp.com/api/v1/notice/${id}`,
       notice
     );
-    history.push("/notice");
+    history.push("/notice-auth");
   };
 
   const loadNotice = async () => {
